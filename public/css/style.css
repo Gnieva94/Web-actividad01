@@ -1,0 +1,121 @@
+body{
+    background: linear-gradient(#FFA1C9,#FFFBE7);
+    margin: 0px;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #B20600;
+    min-height: calc(100vh - 88vh);
+}
+main{
+    min-height: calc(100vh - 23vh);
+}
+footer{
+    background-color: #FDD7AA;
+    text-align: center;
+    min-height: calc(100vh - 92vh);
+}
+/*------Header-------- */
+a{
+    display: inline-block;
+    background-color: #890F0D;
+    color: #FFFBE7;
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 7px;
+}
+header h1{
+    margin: 0px;
+    text-align: center;
+    font-size: 1.9rem;
+}
+/*------Main-------- */
+h2{
+    margin-left: 10px;
+}
+section a{
+    margin-left: 2px;
+}
+img{
+    margin: 10px auto;
+    display: block;
+    border-radius: 20px;
+    min-width: 200px;
+    min-height: 150px;
+}
+#img-home{
+    width: 50%;
+    height: 50%;
+}
+#img-acerca{
+    width: 25%;
+    height: 25%;
+    border-radius: 250px;
+}
+#img-receta{
+    width: 35%;
+    height: 35%;
+    border-radius: 20px;
+}
+section p{
+    margin: 15px 15px;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+#izq{
+    display: inline-block;
+    margin: 10px 20px;
+}
+#izq ul{
+    padding: 0px;
+    margin-left: 10px;
+}
+#izq ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#der{
+    display: inline-block;
+    margin: 10px 20px;
+}
+#der ol{
+    padding-left: 25px;
+}
+#der ol li{
+    font-size: 1rem;
+}
+div h4{
+    margin-left: 10px;
+}
+iframe{
+    margin: 10px 20px;
+}
+form{
+    margin-left: 20px;
+}
+form label{
+    font-size: 1.1rem;
+}
+form p{
+    margin: 15px 0px;
+}
+#enviar-input{
+    background-color: #890F0D;
+    color: #FFFBE7;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+}
+form button{
+    background-color: #890F0D;
+    color: #FFFBE7;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+}
+/*------Footer-------- */
+footer p{
+    margin: 0px;
+    padding: 15px;
+}

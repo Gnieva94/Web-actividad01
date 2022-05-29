@@ -52,8 +52,8 @@ html{
 /*------Main-------- */
 .sec-home{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 .sec-home h1{
     font-size: 1.9rem;
@@ -61,6 +61,7 @@ html{
 }
 .sec-home img{
     width: 90%;
+    max-width: 300px;
     height: 200px;
     border-radius: 7px;
     margin: 5px 0;
@@ -100,6 +101,7 @@ html{
 }
 #img-nosotros{
     width: 90%;
+    max-width: 300px;
     height: 200px;
     border-radius: 7px;
     margin: 5px 0;
@@ -129,6 +131,7 @@ html{
 }
 #img-receta{
     width: 80%;
+    max-width: 300px;
     height: 150px;
     border-radius: 7px;
     margin: 5px 0;
@@ -175,5 +178,72 @@ form button{
     border: none;
 }
 
-@media screen and (max-width:320px) {
+@media screen and (min-width:700px) {
+    .nav{
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        grid-template-areas: "header header header";
+        height: 100%;
+        align-items: center;
+    }
+    .sec-home img{
+        width: 100%;
+        max-width: 300px;
+        height: 250px;
+    }
+    #img-nosotros{
+        width: 100%;
+        max-width: 300px;
+        height: 250px;
+    }
+    #img-receta{
+        width: 100%;
+        max-width: 300px;
+        height: 200px;
+    }
+    .tabla ol{
+        margin-left: 20px;
+        width: 500px;
+        text-align: justify;
+    }
+    .sec-nosotros p{
+        margin: 10px 50px;
+    }
+    .sec-nosotros iframe{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width:900px) {
+    .nav{
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        grid-template-areas: "header header header";
+        height: 100%;
+    }
+    .nav a{
+        padding: 5px;
+    }
+    .sec-home img{
+        width: 100%;
+        max-width: 400px;
+        height: 270px;
+    }
+    #img-nosotros{
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
+    #img-receta{
+        width: 100%;
+        max-width: 450px;
+        height: 300px;;
+    }
+    .sec-nosotros p{
+        padding: 10px;
+        background-color: rgba(232, 236, 241,1);
+        margin: 10px 100px;
+    }
+    .sec-nosotros iframe{
+        margin-bottom: 10px;
+    }
 }

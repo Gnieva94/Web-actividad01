@@ -6,28 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Actividad01</title>
+    <script src="https://kit.fontawesome.com/5023aafd6f.js" crossorigin="anonymous"></script>
+    <title>ChochisCake</title>
 </head>
 
 <body>
     <div class="container">
         <header class="header">
-            <nav>
-            <a href="index.html">Home</a>
-            <a href="pages/receta.html">Recetas</a>
-            <a href="pages/acerca.html">Nosotros</a>
-            <a href="pages/contacto.html">Contacto</a>
-            <a href="pages/sucursal.html">Sucursales</a>
-            <a href="pages/registro.html">Registro</a>
-        </nav>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="pages/receta.html">Recetas</a>
+                <a href="pages/nosotros.html">Nosotros</a>
+            </nav>
         </header>
         <main class="contenido">
-            <section>
+            <section class="sec-home">
+                <h1>ChochisCake Bakery</h1>
+                <img src="./imgs/home-img-logo.jpg" alt="logo">
+                <div class="contacto">
+                <h2>Contacto</h2>
+                <p>Enviame tus sugerencias de recetas a mi correo: <a
+                        href="mailto:ejemplo@gmail.con">ejemplo@gmail.com</a></p>
+                <form action="../public/pages/show_data.html" target="_blank">
+                    <label for="firstname">Nombre: </label><input size="30" type="text" name="firstname"
+                        placeholder="Ingrese su nombre aqui...">
+                    <br>
+                    <label for="lastname">Apellido:</label><input size="30" type="text" name="lastname"
+                        placeholder="Ingrese su apellido aqui...">
+                    <br>
+                    <label for="street">Direccion:</label><input type="text" name="address"
+                        placeholder="Ingrese su dirección aqui...">
+                    <br>
+                    <label for="city">Ciudad: </label><input type="text" name="city" value="C.A.B.A.">
+                    <br>
+                    <label for="zipcode">Código Postal:</label><input type="text" name="zipcode"
+                        placeholder="Ingrese su codigo postal aqui...">
+                    <br>
+                    <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label> <input type="date" name="birthdate">
+                    <br>
+                    <input type="submit" value="Enviar" id="enviar-input">
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
             </section>
         </main>
         <footer class="footer">
+            <a href="https://github.com/Gnieva94"><i class="fa-brands fa-github"></i></a>
             <p>
-                Derechos reservados @2022
+                Created by Gnievassj
             </p>
         </footer>
     </div>

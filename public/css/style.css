@@ -9,100 +9,149 @@ html{
 }
 .container{
     display: grid;
-    grid-template: 0.5fr 5fr 0.5fr / 1fr 1fr;
-    grid-template-areas:"header header"
-                        "contenido contenido"
-                        "footer footer";
+    grid-template: 0.5fr 5fr 0.5fr / 1fr;
+    grid-template-areas:"header"
+                        "contenido"
+                        "footer";
     height: 100vh;
+    background: linear-gradient(#FFA1C9,#FFFBE7);
 }
 .header{
     grid-area: header;
     background-color: #B20600;
+    margin-bottom: 5px;
 }
 .contenido{
     grid-area: contenido;
-    background: linear-gradient(#FFA1C9,#FFFBE7);
+    
 }
 .footer{
     grid-area: footer;
     background-color: #FDD7AA;
-}
-
-
-/*------Header-------- */
-
-nav{
     display: flex;
-    height: 100%;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 
-a{
+/*------Header-------- */
+.nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #890F0D;
     color: #FFFBE7;
-    padding: 7px;
+    font-size: 1.8rem;
+    padding: 2px;
     text-decoration: none;
     border-radius: 7px;
     margin: 1px 1px;
 }
-a:hover{
+.nav a:hover{
     font-weight: bold;
 }
 /*------Main-------- */
-img{
-    margin: 10px auto;
-    display: block;
-    border-radius: 20px;
-    min-width: 200px;
-    min-height: 150px;
+.sec-home{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-#img-acerca{
-    width: 25%;
-    height: 25%;
-    border-radius: 250px;
+.sec-home h1{
+    font-size: 1.9rem;
+    margin: 5px 0;
+}
+.sec-home img{
+    width: 90%;
+    height: 200px;
+    border-radius: 7px;
+    margin: 5px 0;
+}
+.contacto h2{
+    margin: 5px;
+}
+.contacto p{
+    font-size: 1.1rem;
+    margin: 5px;
+}
+.contacto p a, button{
+    background-color: #890F0D;
+    color: #FFFBE7;
+    font-size: 1rem;
+    padding: 2px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin: 1px 1px;
+}
+.contacto form, input, label{
+    margin: 3px;
+}
+.contacto form input{
+    font-size: 0.9rem;
+}
+
+.sec-nosotros{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sec-nosotros h2{
+    margin: 5px 0;
+    font-size: 2rem;
+}
+#img-nosotros{
+    width: 90%;
+    height: 200px;
+    border-radius: 7px;
+    margin: 5px 0;
+}
+.sec-nosotros p{
+    text-align: justify;
+    margin: 5px 10px;
+}
+.sec-nosotros a{
+    background-color: #890F0D;
+    color: #FFFBE7;
+    font-size: 1rem;
+    padding: 2px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin: 1px 1px;
+}
+.sec-receta{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sec-receta h2{
+    margin: 5px 0;
+    font-size: 2rem;
 }
 #img-receta{
-    width: 35%;
-    height: 35%;
-    border-radius: 20px;
+    width: 80%;
+    height: 150px;
+    border-radius: 7px;
+    margin: 5px 0;
 }
-section p{
-    margin: 15px 15px;
-    text-align: justify;
-    font-size: 1.1rem;
+.tabla{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-/* #izq{
-    display: inline-block;
-    margin: 10px 20px;
+.tabla div{
+    margin: 2px 2px;
+    font-size: 1.2rem;
 }
-#izq ul{
-    padding: 0px;
-    margin-left: 10px;
-}
-#izq ul li{
-    list-style: none;
-    font-size: 1rem;
-}
-#der{
-    display: inline-block;
-    margin: 10px 20px;
-}
-#der ol{
-    padding-left: 25px;
-}
-#der ol li{
-    font-size: 1rem;
-}
-div h4{
-    margin-left: 10px;
-} */
-iframe{
-    margin: 10px 20px;
+
+/* -----footer-------- */
+.footer i{
+    font-size: 1.9rem;
+    color: black;
+    margin: 2px 2px;
 }
 
 /*---------- FORM------------- */
-/* form{
+form{
     margin-left: 20px;
 }
 form label{
@@ -124,7 +173,7 @@ form button{
     padding: 10px;
     border-radius: 7px;
     border: none;
-} */
+}
 
 @media screen and (max-width:320px) {
 }

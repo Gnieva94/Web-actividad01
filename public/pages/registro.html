@@ -8,7 +8,8 @@
     <title>Registro</title>
 </head>
 <body>
-    <header>
+    <div class="container">
+    <header class="header">
         <a href="../index.html">Home</a>
         <a href="acerca.html">Acerca de</a>
         <a href="contacto.html">Contacto</a>
@@ -16,7 +17,7 @@
         <a href="registro.html">Registro</a>
         <h1>La cocina de Chochi</h1>
     </header>
-    <main>
+    <main class="contenido">
         <section>
             <h2>Formulario de registro</h2>
             <form action="show_data.html" target="_blank">
@@ -36,27 +37,28 @@
                 <br><br>
                 <label for="BirthDate">Fecha Nac.(mm/dd/yyyy): </label> <input type="date" name="birthdate">
                 <br><br>
-                <p>Género:
+                <!-- <p>Género:
                 <input type="radio" name="gender" value="hombre" checked>Hombre
                 <input type="radio" name="gender" value="Mujer">Mujer
                 <input type="radio" name="gender" value="Otro"> Otro
-            </p>
-            <p> Estudios:
+            </p> -->
+            <!-- <p> Estudios:
                 <input type="checkbox" name="conocimientos" value="Primario"> Primario
                 <input type="checkbox" name="conocimientos" value="Secundario"> Secundario
                 <input type="checkbox" name="conocimientos" value="Terciario"> Terciario
                 <input type="checkbox" name="conocimientos" value="Universitario"> Universitario
                 <input type="checkbox" name="conocimientos" value="Otros"> Otros
-            </p>
+            </p> -->
             <input type="submit" value="Enviar" id="enviar-input">
             <button type="reset">Reset</button>
             </form>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
         <p>
             Derechos reservados @2022
         </p>
     </footer>
+</div>
 </body>
 </html>
